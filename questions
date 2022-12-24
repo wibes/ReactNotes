@@ -1,7 +1,29 @@
 What does emmet do in VSCode  ?
 Emmet in Visual Studio Code: Emmet is a built-in feature in Visual Studio Code. You don’t have to install any extensions for emmet support. Emmet prevents you from writing the entire code by yourself by providing Emmet abbreviation
 
-What is CDN ?
+
+What is CDN ? Content Delivery Network, no need for node modules and create react app, similar to plug n play
+https://reactjs.org/docs/cdn-links.html
+
+
 What is Cross origin in script ?
+The crossorigin attribute on a <script> tag specifies that CORS is supported when loading an external script file from a third party server or domain.
+CORS is a standard mechanism used to retrieve files from other domains.
+The crossorigin attribute specifies that the script element supports CORS.
+CORS stands for Cross Origin Resource Sharing.
+CORS is a standard mechanism to retrieve files from a third party domain or server.
+If specified, the script file request will be sent with or without credentials.
+Note:  This attribute is only relevant when the script is retrieved from a third party server. Do not use this attribute when these files are on your own server.
+
+Syntax
+#
+<script crossorigin="anonymous | use-credentials">
+Values
+#
+VALUE	DESCRIPTION
+anonymous or "" or blank	A cross-origin request will be sent without credentials and performs basic HTTP authentication. This is the default. Note: crossorigin="anonymous", crossorigin="", and crossorigin are all the same.
+use-credentials	A cross-origin request will be sent with credentials, cookies, and certificate.
+
+
 What is Async and Defer ?
 What us rel=stylesheet ?
