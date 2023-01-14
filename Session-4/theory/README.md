@@ -28,6 +28,8 @@
 
 - Keys are required when a paarent tag has two or more similer tags in it, so that react can update the component which is needed to be updated without destroying the whole paarent component. It improves the effieciency of the application.
 
+https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
+
 ## 9. Can we use index as keys in React?
 - Yes, we can use the indexes in places of keys, but it is not considered as a good practice to use them. Keys are taken from each object which is being rendered. There might be a possibility that if we modify the incomming data react may reander them in unusual order.
 ## 10. What is props in React? Ways to 
