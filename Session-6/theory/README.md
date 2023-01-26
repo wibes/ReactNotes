@@ -78,5 +78,4 @@ We can create requests to other domains or ports to get the data from our browse
 async/await` is a method of making asynchronous requests to a API. Using these we can utilise a API request in our application.
 
 ## What is the use of `const json = await data.json();` in getRestaurants()
-
-- ### : TODO :
+To convert readable stream into JSON.
