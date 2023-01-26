@@ -67,9 +67,11 @@ e.g making API calls inside the rendered componnents.
 
 ## 5. (Research) Why do we use super(props) in constructor?
 
-`super(props)` is used to inherit the properties and access of variables of the React parent class when we initialise our component.
+`super(props)` is used to send props to parent class constructor. If we want to use this.props in the constructor, we need to pass it to super. Otherwise, this.Props are available inside the render function. As props are initialized to context before render and after constructor gets called.
+Note: Outside Constructor() Both will display same value for 'this.props'
+
+Note: Outside Constructor() Both will display same value for 'this.props'
 
 ## 6. (Research) Why can't we have the callback function of useEffect async?
 
-We cannot have the callback function of `useEffect` as async because a `useState` hook expects a clean-up function, it is required to cleanup the effect when the component leaves the page.
-If we use `async` that will return us a promise, the promise will affect the clean-up function from bein called.
+We cannot have the callback function of `useEffect` as async because async fucntions always return a promise and if we make callback as async then it will return a promise and callback function should either return nothing or a function for clean up.
